@@ -1,0 +1,239 @@
+<view class="login-ctn">
+  <view class="login-banner-wrap">
+    <view class="logo-wrap"></view>
+    <view class="login-banner-content-wrap">
+      <view class="login-banner-content-header">
+        <text>挑选助教</text>
+        <text>陪孩子快乐练琴</text>
+      </view>
+      <view class="login-banner-content-text">双师模式 在线钢琴陪练</view>
+    </view>
+  </view>
+  <view class="register-wrap">
+    <view class="register-number-input-wrap">
+      <view class="register-number-input-desc">手机</view>
+      <input class="register-number-input" type="number" placeholder="请输入手机号" bindinput="inpu_num"></input>
+    </view>
+     <view class="register-code-input-wrap">
+      <input class="register-code-input" type="text" placeholder="请输入验证码" bindinput="inpu_code"></input>
+      <button plain="{{plain}}" disabled="{{ disabled }}" class="register-code-input-button" bindtap="getcode">{{check_code}}</button>
+    </view>
+    <view bindtap="login" class="register-wrap-button">手机号登录</view>
+  </view>
+  <view class="dubble-teacher-wrap">
+    <view class="dubble-teacher-header"></view>
+     <view class="dubble-teacher-list-wrap">
+      <view class="dubble-teacher-item-wrap left">
+        <image class="dubble-teacher-item-image" src="https://prd-kpl.oss-cn-shanghai.aliyuncs.com/images/yangtongfan/dubble-teacher01.jpg"></image>
+        <view class="dubble-teacher-item-desc">
+          <view class="dubble-teacher-item-desc-text-wrap">
+            <view class="dubble-teacher-item-line"></view>
+            优选助教
+          </view>
+          <view class="dubble-teacher-item-desc-text">
+            挑选合适的陪练老师作为助教
+          </view>
+        </view>
+      </view>
+      <view class="dubble-teacher-item-wrap right">
+        <view class="dubble-teacher-item-desc">
+          <view class="dubble-teacher-item-desc-text-wrap">
+            双师配合
+            <view class="dubble-teacher-item-line"></view>
+          </view>
+          <view class="dubble-teacher-item-desc-text">
+            主课老师决定陪练课练习内容和要求
+          </view>
+        </view>
+        <image class="dubble-teacher-item-image" src="https://prd-kpl.oss-cn-shanghai.aliyuncs.com/images/yangtongfan/dubble-teacher02.jpg"></image>
+      </view>
+      <view class="dubble-teacher-item-wrap left">
+        <image class="dubble-teacher-item-image" src="https://prd-kpl.oss-cn-shanghai.aliyuncs.com/images/yangtongfan/dubble-teacher03.jpg"></image>
+        <view class="dubble-teacher-item-desc">
+          <view class="dubble-teacher-item-desc-text-wrap">
+            <view class="dubble-teacher-item-line"></view>
+            全心辅助
+          </view>
+          <view class="dubble-teacher-item-desc-text">
+            陪练课完全按照主课要求辅导孩子练琴
+          </view>
+        </view>
+      </view>
+      <view class="dubble-teacher-item-wrap right">
+        <view class="dubble-teacher-item-desc">
+          <view class="dubble-teacher-item-desc-text-wrap">
+            紧密协作
+            <view class="dubble-teacher-item-line"></view>
+          </view>
+          <view class="dubble-teacher-item-desc-text">
+            陪练课成果及时同步，随时了解孩子练习情况
+          </view>
+        </view>
+        <image class="dubble-teacher-item-image" src="https://prd-kpl.oss-cn-shanghai.aliyuncs.com/images/yangtongfan/dubble-teacher04.jpg"></image>
+      </view>
+     </view>
+  </view>
+  <view class="why-choose-us-wrap">
+    <view class="why-choose-us-header">
+    </view>
+    <swiper
+      indicator-dots="{{indicatorDots}}"
+      autoplay="{{autoplay}}"
+      interval="{{interval}}"
+      duration="{{duration}}"
+      bindanimationfinish="bindanimationfinish"
+      indicator-color="rgba(255, 255, 255, 1)"
+      indicator-active-color="#F8542E"
+      class="why-choose-us-swiper">
+      <block wx:for="{{imgUrls}}"  wx:key="url" wx:for-item="item">
+        <swiper-item>
+          <image src="{{item}}" class="slide-image" width="355" height="150" />
+        </swiper-item>
+      </block>
+    </swiper>
+    <view class="why-choose-us-desc">{{chooseDesc}}</view>
+    <view class="why-choose-us-sub-desc">{{chooseSubDesc}}</view>
+  </view>
+  <view class="teacher-power-wrap">
+    <view class="teacher-power-wrap-header"></view>
+    <view class="teacher-power-wrap-img"></view>
+    <view class="teacher-power-desc-wrap">
+      <view class="teacher-power-desc-item">
+        <view class="teacher-power-desc-item-desc">
+         <view class="teacher-power-desc-item-desc-text">99</view>
+         %
+        </view>
+        <view class="teacher-power-desc-item-text">学生满意</view>
+      </view>
+      <view class="teacher-power-desc-item">
+        <view class="teacher-power-desc-item-desc">
+         <view class="teacher-power-desc-item-desc-text">100</view>
+         %
+        </view>
+        <view class="teacher-power-desc-item-text">优质教师</view>
+      </view>
+      <view class="teacher-power-desc-item">
+        <view class="teacher-power-desc-item-desc">
+         <view class="teacher-power-desc-item-desc-text">30</view>
+         个
+        </view>
+        <view class="teacher-power-desc-item-text">国家和地区</view>
+      </view>
+    </view>
+  </view>
+  <view class="who-recommend-wrap">
+    <view class="who-recommend-header"></view>
+    <view class="who-recommend-list">
+      <view class="who-recommend-item">
+        <image class="who-recommend-item-img" src="https://prd-kpl.oss-cn-shanghai.aliyuncs.com/images/yangtongfan/whoRecommend_item_img01.png"></image>
+        <view class="who-recommend-item-desc">
+          <view class="who-recommend-item-desc-header">
+            <view class="who-recommend-item-desc-header-content">
+            俞敏洪
+            </view>
+            新东方集团创始人 
+          </view>
+          <view class="who-recommend-item-desc-text">
+            20世纪影响中国的25位企业家之一
+          </view>
+        </view>
+      </view>
+      <view class="who-recommend-item">
+        <image class="who-recommend-item-img" src="https://prd-kpl.oss-cn-shanghai.aliyuncs.com/images/yangtongfan/whoRecommend_item_img02.png"></image>
+        <view class="who-recommend-item-desc">
+          <view class="who-recommend-item-desc-header">
+            <view class="who-recommend-item-desc-header-content">
+            凯叔
+            </view>
+            凯叔讲故事创始人 
+          </view>
+          <view class="who-recommend-item-desc-text">
+            中国最大童年故事品牌
+          </view>
+        </view>
+      </view>
+      <view class="who-recommend-item">
+        <image class="who-recommend-item-img" src="https://prd-kpl.oss-cn-shanghai.aliyuncs.com/images/yangtongfan/whoRecommend_item_img03.png"></image>
+        <view class="who-recommend-item-desc">
+          <view class="who-recommend-item-desc-header">
+            <view class="who-recommend-item-desc-header-content">
+            邱坚强
+            </view>
+            森马集团创始人 
+          </view>
+          <view class="who-recommend-item-desc-text">
+            中国休闲服饰领军品牌森马创始人
+          </view>
+        </view>
+      </view>
+      <view class="who-recommend-item">
+        <image class="who-recommend-item-img" src="https://prd-kpl.oss-cn-shanghai.aliyuncs.com/images/yangtongfan/whoRecommend_item_img04.png"></image>
+        <view class="who-recommend-item-desc">
+          <view class="who-recommend-item-desc-header">
+            <view class="who-recommend-item-desc-header-content">
+            宋涛
+            </view>
+            小鬼当佳创始人 
+          </view>
+          <view class="who-recommend-item-desc-text">
+            中国高端儿童摄影行业领导品牌
+          </view>
+        </view>
+      </view>
+      <view class="who-recommend-item">
+        <image class="who-recommend-item-img" src="https://prd-kpl.oss-cn-shanghai.aliyuncs.com/images/yangtongfan/whoRecommend_item_img05.png"></image>
+        <view class="who-recommend-item-desc">
+          <view class="who-recommend-item-desc-header">
+            <view class="who-recommend-item-desc-header-content">
+            隆龙
+            </view>
+            中国著名音乐制作人 
+          </view>
+          <view class="who-recommend-item-desc-text">
+            华晨宇、老狼音乐总监
+          </view>
+        </view>
+      </view>
+      <view class="who-recommend-item">
+        <image class="who-recommend-item-img" src="https://prd-kpl.oss-cn-shanghai.aliyuncs.com/images/yangtongfan/whoRecommend_item_img06.png"></image>
+        <view class="who-recommend-item-desc">
+          <view class="who-recommend-item-desc-header">
+            <view class="who-recommend-item-desc-header-content">
+            陆文勇
+            </view>
+            快陪练创始人 
+          </view>
+          <view class="who-recommend-item-desc-text">
+            2017福布斯亚洲杰出青年领袖
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="our-promise-wrap">
+    <view class="our-promise-wrap-header"></view>
+    <view class="our-promise-list-wrap">
+      <view class="our-promisr-item">
+        <image class="our-promisr-item-img" src="https://prd-kpl.oss-cn-shanghai.aliyuncs.com/images/yangtongfan/ourPromise_item_img03.png"></image>
+        <view class="our-promisr-item-desc">
+          <view class="our-promisr-item-desc-header">服务承诺</view>
+          <view class="our-promisr-item-desc-text">三合一服务体系，陪练老师和课程顾问及班主任将全程五星服务</view>
+        </view>
+      </view>
+      <view class="our-promisr-item">
+        <image class="our-promisr-item-img" src="https://prd-kpl.oss-cn-shanghai.aliyuncs.com/images/yangtongfan/ourPromise_item_img02.png"></image>
+        <view class="our-promisr-item-desc">
+          <view class="our-promisr-item-desc-header">退款承诺</view>
+          <view class="our-promisr-item-desc-text">三节课内对陪练效果或服务不满意，可全额退款</view>
+        </view>
+      </view>
+      <view class="our-promisr-item">
+        <image class="our-promisr-item-img" src="https://prd-kpl.oss-cn-shanghai.aliyuncs.com/images/yangtongfan/ourPromise_item_img01.png"></image>
+        <view class="our-promisr-item-desc">
+          <view class="our-promisr-item-desc-header">师资承诺</view>
+          <view class="our-promisr-item-desc-text">陪练老师均拥有专业音乐院校背景，经6层严格选拔</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

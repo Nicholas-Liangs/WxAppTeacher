@@ -1,0 +1,406 @@
+.login-ctn{
+  overflow: hidden;
+}
+.login-banner-wrap{
+  width: 750rpx;
+  height: 610rpx;
+  background-image: url(http://prd-kpl.oss-cn-shanghai.aliyuncs.com/images/yangtongfan/login_bnner.png);
+  background-size: 100%;
+  overflow: hidden;
+}
+.logo-wrap{
+  width: 181rpx;
+  height:57rpx;
+  background-image: url(http://prd-kpl.oss-cn-shanghai.aliyuncs.com/images/yangtongfan/login_logo.png);
+  background-size: 100% 100%;
+  margin: 44rpx 0 0 45rpx;
+}
+.login-banner-content-wrap{
+  width: 450rpx;
+  margin: 83rpx auto 0;
+}
+.login-banner-content-header{
+  font-size:64rpx;
+  font-family:SourceHanSansCN-Heavy;
+  font-weight:800;
+  color:rgba(255,255,255,1);
+  line-height:80rpx;
+  text-align: center;
+}
+.login-banner-content-header text{
+  display: block;
+}
+.login-banner-content-text{
+  width:340rpx;
+  height:44rpx;
+  background:rgba(0,0,0,.3);
+  border-radius:24rpx;
+  font-size:28rpx;
+  font-family:SourceHanSansCN-Regular;
+  font-weight:400;
+  color:rgba(255,255,255,1);
+  line-height:44rpx;
+  text-align: center;
+  margin: 34rpx auto 0;
+}
+.register-wrap{
+  width:686rpx;
+  height:461rpx;
+  background:rgba(255,255,255,1);
+  box-shadow:0rpx 0rpx 30rpx 0rpx rgba(0,0,0,0.08);
+  border-radius:16rpx;
+  margin: -72rpx auto 0;
+  overflow: hidden;
+}
+.register-number-input-wrap{
+  width:598rpx;
+  padding: 0 30rpx;
+  box-sizing: border-box;
+  height:88rpx;
+  background:rgba(239,243,245,1);
+  border-radius:45rpx;
+  margin: 72rpx auto 44rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.register-number-input-desc{
+  width:84rpx;
+  height:40rpx;
+  font-size:28rpx;
+  font-family:PingFangSC-Regular;
+  font-weight:400;
+  color:rgba(102,102,102,1);
+  line-height:40rpx;
+  margin-right:16rpx;
+}
+.register-number-input{
+  width:396rpx;
+  height:40rpx;
+  font-size:28rpx;
+  font-family:PingFangSC-Light;
+  font-weight:300;
+  color:rgba(155,155,157,1);
+  line-height:40rpx;
+}
+.register-code-input-wrap{
+  width:598rpx;
+  padding: 0 0 0 30rpx;
+  box-sizing: border-box;
+  height:88rpx;
+  background:rgba(239,243,245,1);
+  border-radius:45rpx;
+  margin: 0rpx auto 44rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.register-code-input-desc{
+  width:84rpx;
+  height:40rpx;
+  font-size:28rpx;
+  font-family:PingFangSC-Regular;
+  font-weight:400;
+  color:rgba(102,102,102,1);
+  line-height:40rpx;
+  margin-right:16rpx;
+}
+.register-code-input{
+  width:196rpx;
+  height:40rpx;
+  font-size:28rpx;
+  font-family:PingFangSC-Light;
+  font-weight:300;
+  color:rgba(155,155,157,1);
+  line-height:40rpx;
+}
+.register-code-input-button{
+  width:228rpx;
+  height:88rpx;
+  background:rgba(255,168,11,1);
+  border-radius:44rpx;
+  font-size:28rpx;
+  font-family:PingFangSC-Medium;
+  font-weight:500;
+  color:rgba(255,255,255,1);
+  line-height:88rpx;
+  text-align: center;
+  margin: 0;
+  border: none;
+}
+.register-code-input-button::after {
+  border: none;
+}
+.register-code-input-button.plain {
+  border: none;
+  border-color: transparent;
+}
+.register-wrap-button{
+  width:598rpx;
+  height:96rpx;
+  background:rgba(248,84,46,1);
+  border-radius:50rpx;
+  margin: 0 auto;
+  font-size:40rpx;
+  font-family:PingFangSC-Medium;
+  font-weight:500;
+  color:rgba(255,255,255,1);
+  line-height:96rpx;
+  text-align: center;
+}
+.dubble-teacher-wrap{
+  width:686rpx;
+  height:1059rpx;
+  margin: 0 auto;
+}
+.dubble-teacher-header{
+  width:480rpx;
+  height:58rpx;
+  background-image: url(http://prd-kpl.oss-cn-shanghai.aliyuncs.com/images/yangtongfan/dubble-teacher-header.png);
+  background-size: 100%;
+  margin: 58rpx auto;
+}
+.dubble-teacher-list-wrap{
+  width:100%;
+}
+.dubble-teacher-item-wrap{
+  width:100%;
+  height:176rpx;
+  display: flex;
+  align-items: center;
+  margin-bottom: 60rpx;
+}
+.dubble-teacher-item-image{
+  width:301rpx;
+  height:176rpx;
+}
+.dubble-teacher-item-wrap.left{
+  justify-content: flex-start;
+  text-align: left;
+}
+.dubble-teacher-item-wrap.right{
+  justify-content: flex-end;
+  text-align: right;
+}
+.dubble-teacher-item-desc-text-wrap{
+  font-size:36rpx;
+  font-family:PingFangSC-Medium;
+  font-weight:500;
+  color:rgba(53,53,54,1);
+  line-height:36rpx;
+}
+.dubble-teacher-item-desc-text{
+  font-size:28rpx;
+  font-family:PingFangSC-Regular;
+  font-weight:400;
+  color:rgba(102,102,102,1);
+  line-height:40rpx;
+  margin-top: 12rpx;
+}
+.dubble-teacher-item-line{
+  width:6rpx;
+  height:32rpx;
+  background:rgba(248,84,46,1);
+  display: inline-block;
+}
+.dubble-teacher-item-wrap.left image{
+  margin-right: 24rpx;
+}
+.dubble-teacher-item-wrap.right image{
+  margin-left: 24rpx;
+}
+.why-choose-us-wrap{
+  width:686rpx;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.why-choose-us-header{
+  width:588rpx;
+  height:59rpx;
+  background-image: url(http://prd-kpl.oss-cn-shanghai.aliyuncs.com/images/yangtongfan/why-choose-us-header.png);
+  background-size: 100%;
+  margin: 58rpx auto;
+}
+.why-choose-us-swiper{
+  width:686rpx;
+  height:386rpx;
+  border-radius:16rpx;
+  overflow: hidden;
+  margin: 0 auto;
+}
+.why-choose-us-desc{
+  margin-top:30rpx;
+  font-size:36rpx;
+  font-family:PingFangSC-Medium;
+  font-weight:500;
+  color:rgba(102,102,102,1);
+  line-height:50rpx;
+}
+.why-choose-us-sub-desc{
+  font-size:22rpx;
+  font-family:PingFangSC-Medium;
+  font-weight:500;
+  color:#9B9B9D;
+  line-height:50rpx;
+}
+.teacher-power-wrap{
+  margin: 0 auto;
+  overflow: hidden;
+}
+.teacher-power-wrap-header{
+  width:320rpx;
+  height:59rpx;
+  background-image: url(http://prd-kpl.oss-cn-shanghai.aliyuncs.com/images/yangtongfan/teacherPower_header.png);
+  background-size: 100%;
+  margin: 58rpx auto;
+}
+.teacher-power-wrap-img{
+  width: 750rpx;
+  height: 505rpx;
+  background-image: url(http://prd-kpl.oss-cn-shanghai.aliyuncs.com/images/yangtongfan/teacherPower_img.png);
+  background-size: 100%;
+}
+.teacher-power-desc-wrap{
+  width:750rpx;
+  height:167rpx;
+  background:rgba(248,84,46,1);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.teacher-power-desc-item-desc{
+  display: flex;
+  justify-content: flex-start;
+  align-items: baseline;
+  font-size:24rpx;
+  font-family:PingFangSC-Regular;
+  font-weight:400;
+  color:rgba(255,255,255,1);
+  line-height:24rpx
+}
+.teacher-power-desc-item-desc-text{
+  font-size:64rpx;
+  font-family:PingFangSC-Medium;
+  font-weight:500;
+  color:rgba(255,255,255,1);
+  line-height:64rpx;
+}
+.teacher-power-desc-item-text{
+  font-size:28rpx;
+  font-family:PingFangSC-Regular;
+  font-weight:400;
+  color:rgba(255,255,255,1);
+  line-height:28rpx;
+  margin-top: 10rpx;
+}
+.who-recommend-wrap{
+  width:686rpx;
+  height:1059rpx;
+  margin: 0 auto;
+}
+.who-recommend-header{
+  width:528rpx;
+  height:59rpx;
+  background-image: url(http://prd-kpl.oss-cn-shanghai.aliyuncs.com/images/yangtongfan/whoRecommend_header.png);
+  background-size: 100%;
+  margin: 58rpx auto;
+}
+.who-recommend-list{
+  width: 100%;
+  overflow: hidden;
+}
+.who-recommend-item{
+  width:100%;
+  height:140rpx;
+  background:rgba(255,255,255,1);
+  border:1rpx solid rgba(239,243,245,1);
+  border-radius: 70rpx;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 20rpx;
+}
+.who-recommend-item-img{
+  width:142rpx;
+  height:142rpx;
+  border-radius: 70rpx;
+  overflow: hidden;
+  margin-right: 31rpx;
+}
+.who-recommend-item-desc-header{
+  display: flex;
+  justify-content: flex-start;
+  align-items: baseline;
+  font-size:24rpx;
+  font-family:PingFangSC-Regular;
+  font-weight:400;
+  color:rgba(102,102,102,1);
+  line-height:24rpx;
+}
+.who-recommend-item-desc-header-content{
+  font-size:36rpx;
+  font-family:PingFangSC-Medium;
+  font-weight:500;
+  color:rgba(248,84,46,1);
+  line-height:36rpx;
+  margin-right: 12rpx;
+}
+.who-recommend-item-desc-text{
+  font-size:28rpx;
+  font-family:PingFangSC-Regular;
+  font-weight:400;
+  color:rgba(155,155,157,1);
+  line-height:28rpx;
+  margin-top: 24rpx;
+}
+.our-promise-wrap{
+  width:686rpx;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.our-promise-wrap-header{
+  width:380rpx;
+  height:59rpx;
+  background-image: url(http://prd-kpl.oss-cn-shanghai.aliyuncs.com/images/yangtongfan/ourPromise_header.png);
+  background-size: 100%;
+  margin: 58rpx auto;
+}
+.our-promise-list-wrap{
+  width:100%;
+  overflow: hidden;
+}
+.our-promisr-item{
+  width: 100%;
+  height: 136rpx;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 42rpx;
+}
+.our-promisr-item-img{
+  width: 113rpx;
+  height: 106rpx;
+}
+.our-promisr-item-desc{
+  margin-left: 32rpx;
+  width: 527rpx;
+}
+.our-promisr-item-desc-header{
+  font-size:36rpx;
+  font-family:PingFangSC-Regular;
+  font-weight:400;
+  color:rgba(53,53,54,1);
+  line-height:50rpx;
+}
+.our-promisr-item-desc-text{
+  font-size:26rpx;
+  font-family:PingFangSC-Regular;
+  font-weight:400;
+  color:rgba(155,155,157,1);
+  line-height:37rpx;
+  margin-top: 12rpx;
+}
+.slide-image{
+  width:100%;
+  height:100%;
+}
